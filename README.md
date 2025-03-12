@@ -1,3 +1,5 @@
+![BrightChain](BrightChainLogo.png)
+
 # BRIGHTCHAIN: A DAG-based Substrate Network for AI and EVM Interoperability
 
 ## Executive Summary
