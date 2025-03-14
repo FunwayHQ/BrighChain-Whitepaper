@@ -168,6 +168,112 @@ To leverage the extensive ecosystem of Ethereum-based applications and tools, Br
    - Caching layer optimized for common AI and content verification access patterns
    - State commitment scheme compatible with both Substrate and Ethereum verification
 
+### Network Node Types
+BrightChain's network architecture incorporates multiple specialized node types to fulfill different functions within the ecosystem. Each node type is optimized for its specific role, ensuring efficient resource allocation and network performance.
+
+1. **Validator Nodes**
+Validator nodes form the backbone of the network's security and consensus mechanism:
+
+Responsibility: Participate in block production, transaction validation, and consensus formation
+Requirements: High availability (99.9%+), substantial stake, minimum hardware specifications
+Features:
+
+Full state storage and transaction history
+DAG consensus participation with voting rights
+Block production capabilities
+Slashing protection mechanisms
+Telemetry and performance monitoring
+
+
+
+2. **Compute Nodes**
+Specialized for AI and ZK computation workloads:
+
+Responsibility: Execute computationally intensive AI and zero-knowledge proof operations
+Requirements: High-performance hardware (GPU/TPU acceleration), optional ZK-proving hardware
+Features:
+
+Specialized hardware acceleration for neural network operations
+Distributed model execution framework
+ZK proof generation infrastructure
+Workload balancing and scheduling
+Reward mechanisms for computation services
+Verifiable computation reporting
+
+
+
+3. **Storage Nodes**
+Dedicated to content storage and retrieval:
+
+Responsibility: Store content fingerprints, AI models, and associated metadata
+Requirements: High storage capacity, good network bandwidth, data redundancy
+Features:
+
+Content-addressable storage system
+Erasure coding for efficient redundancy
+Proofs of storage for verification
+Hierarchical storage management
+Content distribution capabilities
+Encrypted storage options
+
+
+
+4. **Oracle Nodes**
+Provide external data and verification services:
+
+Responsibility: Interface with external systems, provide off-chain data, verify real-world events
+Requirements: Secure connections to external systems, reputation staking
+Features:
+
+Multi-source data aggregation
+Anomaly detection for data feeds
+Cryptographic attestation of data sources
+Specialized oracles for copyright monitoring
+Cross-chain data bridges
+
+
+
+5. **Light Nodes**
+Optimized for low-resource environments:
+
+Responsibility: Provide network access for resource-constrained devices
+Requirements: Minimal, can run on mobile devices or IoT hardware
+Features:
+
+State subset synchronization
+Light client verification protocols
+Header-only synchronization option
+Checkpoint-based verification
+Mobile-optimized networking
+
+
+
+6. **Gateway Nodes**
+Interface between BrightChain and external systems:
+
+Responsibility: Provide API endpoints, facilitate cross-chain communication
+Requirements: High bandwidth, robust security, public-facing infrastructure
+Features:
+
+Full JSON-RPC API support
+WebSocket subscription services
+Cross-chain message routing
+Rate limiting and DDoS protection
+API key management and access control
+
+
+
+Node Interaction Model
+The BrightChain network implements a mesh architecture where nodes communicate based on functional requirements:
+
+Validator nodes maintain connections to all other validators for consensus
+Compute and storage nodes cluster based on workload and data locality
+Gateway nodes operate at network edge points for external communication
+Oracle nodes maintain specialized external connections
+Reputation and stake determine connection priorities and resource allocation
+
+This specialized node architecture enables efficient resource allocation for the diverse workloads within the BrightChain ecosystem, from high-throughput transaction processing to computationally intensive AI operations and content fingerprinting tasks.
+
 ## 3. Zero-Knowledge Proof System
 
 BrightChain incorporates a sophisticated zero-knowledge proof system that serves as a cornerstone for privacy, scalability, and trustless verification of complex computations.
